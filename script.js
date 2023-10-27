@@ -58,7 +58,9 @@ document.querySelectorAll(".elem").forEach(function (elem) {
         })
     })
 })
-
+var today = new Date();
+var currentTime = today.getHours() + ":" + today.getMinutes() + ":" + today. getSeconds();
+var time = document.querySelector("#time").textContent = currentTime;
 CircleFollow();
 heroani();
 
